@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Photos() {
+function Profile() {
   return (
     <div>
         
@@ -8,4 +8,4 @@ function Photos() {
   )
 }
 
-export default Photos
+export default Profile

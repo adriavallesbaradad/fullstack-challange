@@ -10,13 +10,13 @@ const user = {
     'https://media-exp1.licdn.com/dms/image/C4E03AQEMOtg5gbvBJA/profile-displayphoto-shrink_400_400/0/1651261760668?e=1672876800&v=beta&t=XlRM75f_P87h7Y72XcZ_QidE5sHLTycNa4tYfyGQmv0',
 }
 const navigation = [
-  { name: 'Home', href: '/#', current: true },
-  { name: 'Photos', href: '#', current: false },
-  { name: 'Videos', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'Photos', href: '/photos', current: false },
+  { name: 'Videos', href: '/videos', current: false },
   { name: 'AboutMe', href: '/about-me', current: false },  
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
+  { name: 'Your Profile', href: '/profile' },
   { name: 'Settings', href: '#' },
   { name: 'Sign out', href: '#' },
 ]

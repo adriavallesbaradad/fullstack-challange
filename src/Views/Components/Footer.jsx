@@ -1,11 +1,10 @@
 const navigation = {
     main: [
       { name: 'Home', href: '/home' },
-      { name: 'Photos', href: '#' },
-      { name: 'Videos', href: '#' },
+      { name: 'Photos', href: '/photos' },
+      { name: 'Videos', href: '/videos' },
       { name: 'AboutMe', href: '/about-me' },
-      { name: 'Profile', href: '#' },
-      
+      { name: 'Profile', href: '/profile' },
     ],
     social: [
       {
