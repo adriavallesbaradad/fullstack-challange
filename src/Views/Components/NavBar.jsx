@@ -2,10 +2,11 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 const user = {
   name: 'Adrià Vallès',
-  email: 'tom@example.com',
+  email: 'adriavallesbaradad@gmail.com',
   imageUrl:
     'https://media-exp1.licdn.com/dms/image/C4E03AQEMOtg5gbvBJA/profile-displayphoto-shrink_400_400/0/1651261760668?e=1672876800&v=beta&t=XlRM75f_P87h7Y72XcZ_QidE5sHLTycNa4tYfyGQmv0',
 }
@@ -31,12 +32,15 @@ export default function Example() {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-700 lg:px-8">
-            <div className="relative flex h-16 justify-between">
-              <div className=" relative z-10 flex px-6 lg:px-6">
+            <div className=" relative flex h-16 justify-between">
+            <Link to="/">
+              <div className=" pt-4 relative z-10 flex px-6 lg:px-6">
+                
                 <div className="text-2xl tracking-widest flex flex-shrink-0 items-center text-transparent bg-clip-text bg-gradient-to-r to-emerald-400 from-white">
                   <h1>ADRIÀ<span class="bg-blue-100 text-blue-800 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">VALLÈS</span></h1>
                 </div>
               </div>
+              </Link>
               <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
                 <div className="w-full sm:max-w-xs">
                   <label htmlFor="search" className="sr-only">

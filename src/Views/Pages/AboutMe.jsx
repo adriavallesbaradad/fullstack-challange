@@ -55,7 +55,7 @@ function AboutMe() {
             </div>
 
             <div className="mt-4 space-y-6">
-              <p className="text-base text-gray-500">
+              <p className="pb-8 text-base text-gray-500">
               Adrià Valles Baradad is a freelance content creator from Barcelona, 
               Spain. With a natural eye for detail and a passion for all things digital, 
               he encapsulates brands, places and experiences through the lens, capturing 
@@ -67,7 +67,7 @@ function AboutMe() {
               <Link to="/contact-me">
               <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent dark:bg-blue-200 dark:text-blue-800 py-3 px-8 text-base font-medium text-white hover:dark:bg-blue-800 hover:dark:text-blue-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                  className="pt-8flex w-full items-center justify-center rounded-md border border-transparent dark:bg-blue-200 dark:text-blue-800 py-3 px-8 text-base font-medium text-white hover:dark:bg-blue-800 hover:dark:text-blue-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
                 >
                   Contact Me!
                 </button>
