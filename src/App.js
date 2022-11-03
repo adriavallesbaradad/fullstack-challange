@@ -1,11 +1,13 @@
 
 
-import NavBar from "./Views/Components/NavBar"
+import Home from "./Views/Pages/Home"
 
 function App() {
   return (
     <>
-            <NavBar />
+    <div>
+      <Home />
+    </div>
     </>
   );
 }

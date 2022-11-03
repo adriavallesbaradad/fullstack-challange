@@ -2,17 +2,17 @@ import React from 'react'
 import NavBar from "../Components/NavBar"
 import Footer from "../Components/Footer"
 
-function home() {
+function AboutMe() {
   return (
     <>
-        <NavBar />
-        <main>
-            
-        </main>
-        <Footer />
+    <NavBar />
+    <main>
+        
+    </main>
+    <Footer />
 
-    </>
+</>
   )
 }
 
-export default home
+export default AboutMe
