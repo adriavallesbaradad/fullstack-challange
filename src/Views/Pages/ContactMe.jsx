@@ -147,11 +147,11 @@ function ContactMe() {
                 <div className="ml-3">
                   <p className="text-base text-gray-500">
                     By selecting this, you agree to the{' '}
-                    <a href="#" className="font-medium text-gray-700 underline">
+                    <a href="/" className="font-medium text-gray-700 underline">
                       Privacy Policy
                     </a>{' '}
                     and{' '}
-                    <a href="#" className="font-medium text-gray-700 underline">
+                    <a href="/" className="font-medium text-gray-700 underline">
                       Cookie Policy
                     </a>
                     .
@@ -171,6 +171,7 @@ function ContactMe() {
         </div>
       </div>
     </div>
+
     </div>
   )
 }
