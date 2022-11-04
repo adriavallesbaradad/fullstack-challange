@@ -15,9 +15,7 @@ function Router() {
   return (
     <>
     <BrowserRouter>
-    
         <Routes>
-        
             <Route path='/' element={<Dashboard />}>
                 <Route index element={<App />} />
                 <Route path='home' element={<Home />} />

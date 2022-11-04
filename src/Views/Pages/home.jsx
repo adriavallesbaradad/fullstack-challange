@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 export default function Home() {
-  const [query, setQuery] = useState("surf");
+  const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [photos, setPhotos] = useState([]);
 
+
+
+
+
+
+
+
+  
+
+
   const getPhotos = async (type) => {
+    
     let url = `https://api.pexels.com/v1/search?query=${query}`;
     if (data?.next_page && type === "next") {
       url = data.next_page;
@@ -48,27 +58,28 @@ export default function Home() {
   };
 
   return (
-    <div className="pt-8">
+    <div className=" pt-8 pl-4">
+      <div>
       <input
-        className="block rounded-md border border-transparent bg-gray-700 py-2 pl-10 pr-3 text-sm placeholder-gray-400 focus:border-white focus:bg-grey-200 focus:text-gray-900 focus:placeholder-gray-500 focus:outline-none focus:ring-white sm:  text-sm"
+        className="block mb-2 text-gray-400 rounded-md border border-transparent bg-gray-700 py-2 pl-4 text-sm placeholder-blue-200 focus:border-white focus:bg-grey-200 focus:text-gray-200 focus:placeholder-gray-500 focus:outline-none focus:ring-white sm:  text-sm"
         onKeyDown={onKeyDownHandler}
         placeholder="Search for new photos"
         onChange={(e) => setQuery(e.target.value)}
         value={query}
       />
-
+</div>
       <div>
-        <button disabled={data?.page === 1} onClick={() => getPhotos("back")}>
+        <button className="bg-blue-200 text-gray-400 rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3"disabled={data?.page === 1} onClick={() => getPhotos("back")}>
           Prev
         </button>
-        <button onClick={() => getPhotos("next")}>NEXT</button>
+        <button className="bg-blue-200 text-gray-400 rounded-r-md py-2 border-l border-gray-200 hover:bg-red-700 hover:text-white px-3" onClick={() => getPhotos("next")}>Next</button>
       </div>
 
-      {loading && <h1>Fetching...</h1>}
+      {loading && <h1></h1>}
       <div className="container">
         {photos?.map((item, index) => {
           return (
-            <div className="box" key={index}>
+            <div className="box pl-4" key={index}>
               <img src={item.src.medium} alt={item.id} />
             </div>
           );
