@@ -40,7 +40,7 @@ function AboutMe() {
           
 
           <div className="mt-4">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Adrià Vallès</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Adrià Vallès Baradad</h1>
           </div>
 
           <section aria-labelledby="information-heading" className="mt-4">
@@ -56,13 +56,14 @@ function AboutMe() {
 
             <div className="mt-4 space-y-6">
               <p className="pb-8 text-base text-gray-500">
-              Adrià Valles Baradad is a freelance content creator from Barcelona, 
-              Spain. With a natural eye for detail and a passion for all things digital, 
-              he encapsulates brands, places and experiences through the lens, capturing 
-              scenes in sport, travel, food and events.
-              With years of travel all over the world, and having lived in both Spain and 
-              Australia, Adrià has an ability to see moments before they happen and pick out 
-              the subtle details within a scene, giving his work an individual quality and edge. 
+              I'm Adrià Vallès a front-end developer and content 
+              creator from Barcelona. I am passionate about making 
+              products intuitive and simple to use and I enjoy designing 
+              interfaces that make user's lives easier. I love learning 
+              about new technologies and how they can benefit people's lives. 
+              I enjoy being able to take complex ideas and break them down into 
+              simple concepts. I encapsulate brands, locations and experiences 
+              through the lens, capturing sports, travel, food and events.
               </p>
               <Link to="/contact-me">
               <button

@@ -1,10 +1,10 @@
 const navigation = {
     main: [
-      { name: 'Home', href: '/home' },
-      { name: 'Photos', href: '/photos' },
-      { name: 'Videos', href: '/videos' },
+      { name: 'Upload', href: '/' },
+      { name: 'MyFiles', href: '/my-files' },
+      { name: 'Contact me!', href: '/contact-me' },
       { name: 'AboutMe', href: '/about-me' },
-      { name: 'Profile', href: '/profile' },
+      { name: 'Profile', href: '/about-me' },
     ],
     social: [
       {
@@ -73,7 +73,7 @@ const navigation = {
   
   export default function Example() {
     return (
-      <footer className="bg-gray-800">
+      <footer className="flex flex-col min-h-screen mt-12 bg-gray-800">
         <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
@@ -92,7 +92,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 Adriè Vallès Bardadad, Inc. All rights reserved.</p>
+          <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 Adrià Vallès Bardadad, Inc. All rights reserved.</p>
         </div>
       </footer>
     )

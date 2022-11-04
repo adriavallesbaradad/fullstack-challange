@@ -1,12 +1,13 @@
 
 
-import Home from "./Views/Pages/Home"
+
+import Upload from "./Views/Pages/Upload";
 
 function App() {
   return (
     <>
     <div>
-      <Home />
+      <Upload />
     </div>
     </>
   );
